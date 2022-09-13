@@ -118,7 +118,7 @@ const HomeScreen = ({ navigation }) => {
                 color: isDarkMode ? Colors.white : Colors.black,
               }}
               placeholder='Insert user name'
-              placeholderTextColor={isDarkMode ? Colors.white : Colors.black}
+              placeholderTextColor={"#a3a3a3"}
               onChangeText={(text) => {
                 if (text.length < 1) {
                   getUsersGit();

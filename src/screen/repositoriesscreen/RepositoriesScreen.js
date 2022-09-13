@@ -23,6 +23,7 @@ import {
 
 import { Colors } from "react-native/Libraries/NewAppScreen";
 import { API_repos } from "../../services/api";
+import moment from "moment";
 
 const RepositoriesScreen = ({ route, navigation }) => {
   const { user } = route.params;
@@ -105,9 +106,14 @@ const RepositoriesScreen = ({ route, navigation }) => {
                 color: isDarkMode ? Colors.white : Colors.black,
               }}
               value={repos}
-              placeholder='Insert repos name'
-              placeholderTextColor={isDarkMode ? Colors.white : Colors.black}
-              onChangeText={(text) => setRepos(text)}
+              placeholder='Search repositories'
+              placeholderTextColor={"#a3a3a3"}
+              onChangeText={(text) => {
+                if (text.length < 1) {
+                  getRepos();
+                }
+                setRepos(text);
+              }}
             />
           </View>
           {repos.length > 0 && (
@@ -191,7 +197,7 @@ const RepositoriesScreen = ({ route, navigation }) => {
                       color: isDarkMode ? Colors.white : Colors.black,
                     }}
                   >
-                    {item.updated_at}
+                    {moment(item.updated_at).format("DD-MMD-YYYY   hh:mm")}
                   </Text>
                 </View>
                 <View
