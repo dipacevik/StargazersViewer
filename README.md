@@ -1,11 +1,11 @@
 # Vtargazers Viewer
 
-##Alpha version, complete and functional but that should be improved ..
+Alpha version, complete and functional but that should be improved.
 
-#Request:
+# Request:
 Create a simple mobile app, using the React Native framework, that, through the GitHub API, allows you to view the list of stargazers in a repository (the list of users who have added it to their favorites). The app must allow the user to type the owner and name of the repository and must therefore show the list (including avatar and username) of the users who have added it to their favorites
 
-###Screen
+## Screen
 ![Simulator Screen Shot - iPhone 13 - 2022-09-13 at 15 01 44](https://user-images.githubusercontent.com/89973438/189908273-49c04772-a96f-4f23-aa38-02645fab5832.png)
 ![Simulator Screen Shot - iPhone 13 - 2022-09-13 at 15 01 46](https://user-images.githubusercontent.com/89973438/189908286-3ba08e18-4080-4945-9e6d-a29a6db62396.png)
 ![Simulator Screen Shot - iPhone 13 - 2022-09-13 at 15 01 41](https://user-images.githubusercontent.com/89973438/189908294-95ec2c66-aeb3-47db-bdbb-056df36efe7c.png)
